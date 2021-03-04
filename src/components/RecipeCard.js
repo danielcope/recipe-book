@@ -1,8 +1,11 @@
 import React from 'react'
+// import recipes from '../recipes'
 
-const RecipeCard = () => {
-    //Take props in as a parameter.
-    // Destructure recipes and index from props.
+const RecipeCard = (props) => {
+
+    const {recipes,index} = props
+
+
 
     //In the h2 tag, print 'Recipe # ' + the value of the id property from the recipe object at recipes[index].
 
@@ -15,7 +18,7 @@ const RecipeCard = () => {
         return (
             <div className="card">
                 <div className="card-number">
-                    <h2></h2>
+                    <h2>Recipe # {recipes[index].id}</h2>
                 </div>
                 <h1></h1>
                 <ul></ul>
